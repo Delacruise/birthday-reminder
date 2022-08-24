@@ -1,38 +1,65 @@
-.App {
+body {
+  background: rgb(250, 129, 150);
+}
+.container {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0 1rem 1rem 1rem;
+  color: #333;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+article {
+}
+
+header {
+  height: fit-content;
+}
+
+.birtdayBlock {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px 20px;
+  align-content: stretch;
+  justify-items: start;
+  margin: 20px 0;
+}
+
+.thePic {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  grid-row: 1 / 3;
+  border-radius: 50%;
+}
+
+.theName {
+  text-transform: capitalize;
+  align-self: end;
+  font-weight: bold;
+}
+
+.theAge {
+  color: rgba(0, 0, 0, 0.5);
+  align-self: start;
+}
+
+.btn {
+  background: rgb(250, 129, 150);
+  color: #fff;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 10px;
+  height: fit-content;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
 }
